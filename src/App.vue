@@ -1,5 +1,6 @@
 <template>
   <Base></Base>
+  <p>hello</p>
 </template>
 
 <script>
