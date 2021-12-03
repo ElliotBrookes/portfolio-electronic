@@ -2,9 +2,9 @@
   <nav class="navbar is-fixed-top">
     <div class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#" @click="this.activeComponent = 'Base'">Logo</a>
-        <a class="navbar-item" href="#" @click="this.activeComponent = 'Work'">Work</a>
-        <a class="navbar-item" href="#" @click="this.activeComponent = 'About'">About Me</a>
+        <a class="navbar-item" @click="this.activeComponent = 'Base'">Logo</a>
+        <a class="navbar-item" @click="this.activeComponent = 'Work'">Work</a>
+        <a class="navbar-item" @click="this.activeComponent = 'About'">About Me</a>
       </div>
     </div>
   </nav>
@@ -19,7 +19,7 @@ import About from './components/About.vue'
 export default {
   name: 'App',
   components: {
-    Base, Work
+    Base, Work, About
   },
   data: function(){
     return{
