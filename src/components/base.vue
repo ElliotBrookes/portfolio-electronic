@@ -21,7 +21,7 @@
      <div class="column">
        <div class="body-text has-text-centered">
          <p class="title">Elliot Brookes' Portfolio</p>
-         <p>Software Developer based in the West Midlands.</p>
+         <p>Software Developer based in the South West of England.</p>
          <div class="">
            <p id="links">
              <ul class="level">
@@ -36,7 +36,7 @@
                  </a>
                </li>
                <li class="level-item">
-                 <a>
+                 <a href="mailto:elliotbrookes1@gmail.com">
                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
                  </a>
                </li>
@@ -50,8 +50,17 @@
 </template>
 
 <script>
+import anime from 'animejs'
+
 export default {
   name: "Base",
+  mounted() {
+    anime({
+      targets: '#heroGraphic',
+      translateY: "-100%",
+      easing: "easeOutExpo"
+    });
+  }
 }
 </script>
 
@@ -67,7 +76,7 @@ section{
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   position: absolute;
   height: 90%;
-  bottom: 0px;
+  bottom: -90%;
   left: 0px;
 }
 .body-text{
