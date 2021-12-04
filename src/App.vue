@@ -27,6 +27,7 @@ import Base from './components/base.vue'
 import Work from './components/Work.vue'
 import About from './components/About.vue'
 
+
 export default {
   name: 'App',
   components: {
