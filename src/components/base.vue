@@ -60,6 +60,15 @@ export default {
       translateY: "-100%",
       easing: "easeOutExpo"
     });
+  },
+  methods: {
+    outroSequence(){
+      return anime({
+        targets: '#heroGraphic',
+        translateY: '100%',
+        easing: "easeInExpo",
+      });
+    }
   }
 }
 </script>
