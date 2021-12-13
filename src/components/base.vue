@@ -68,10 +68,7 @@ export default {
       outro.add({
         targets: '.body-text, .title, #mail, #github, #linkedin',
         translateY: -300,
-        "color": '#fffaf1',
-        "fill": "#fffaf1",
-        'text-shadow': '0 0 0 #fffaf1',
-        "filter": "drop-shadow(0 0 0)",
+        "opacity": [1,0],
         easing: "easeInExpo",
         duration: 600,
         endDelay: 100
@@ -91,6 +88,14 @@ export default {
       translateY: "-100%",
       easing: "easeOutExpo"
     });
+    anime({
+      targets: '.body-text, .title, #mail, #github, #linkedin',
+      translateY: [-300,0],
+      "opacity": [0,1],
+      easing: "easeOutExpo",
+      duration: 600,
+      endDelay: 100
+    })
   },
 }
 </script>
